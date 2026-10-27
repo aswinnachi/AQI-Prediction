@@ -1,0 +1,182 @@
+[
+  {
+    "model_name": "Tamil Nadu XGBoost Predictor (CPCB NAQI)",
+    "model_type": "xgboost",
+    "version": "tn_xgb_v1",
+    "accuracy": 0.993375301361084,
+    "rmse": 3.2432844765078257,
+    "model_file": "xgboost_tn_aqi.pkl",
+    "scaler_file": "scaler_tn.pkl",
+    "features": [
+      "pm2_5",
+      "pm10",
+      "co",
+      "no2",
+      "so2",
+      "o3",
+      "temp_c",
+      "humidity_pct",
+      "pressure_hpa",
+      "wind_speed_kmh",
+      "wind_dir_deg",
+      "rain_mm",
+      "solar_rad_wm2",
+      "hour",
+      "month"
+    ],
+    "feature_importance": [
+      {
+        "feature": "o3",
+        "importance": 0.4306872487068176
+      },
+      {
+        "feature": "humidity_pct",
+        "importance": 0.28694483637809753
+      },
+      {
+        "feature": "pm10",
+        "importance": 0.08714946359395981
+      },
+      {
+        "feature": "pm2_5",
+        "importance": 0.0810302123427391
+      },
+      {
+        "feature": "solar_rad_wm2",
+        "importance": 0.051911380141973495
+      },
+      {
+        "feature": "no2",
+        "importance": 0.0406358540058136
+      },
+      {
+        "feature": "temp_c",
+        "importance": 0.00961959920823574
+      },
+      {
+        "feature": "so2",
+        "importance": 0.005957841873168945
+      },
+      {
+        "feature": "hour",
+        "importance": 0.002118886448442936
+      },
+      {
+        "feature": "pressure_hpa",
+        "importance": 0.0019023949280381203
+      },
+      {
+        "feature": "wind_speed_kmh",
+        "importance": 0.000590261013712734
+      },
+      {
+        "feature": "co",
+        "importance": 0.000584354274906218
+      },
+      {
+        "feature": "rain_mm",
+        "importance": 0.0005008336738683283
+      },
+      {
+        "feature": "wind_dir_deg",
+        "importance": 0.0003667804121505469
+      },
+      {
+        "feature": "month",
+        "importance": 0.0
+      }
+    ],
+    "forecast_hours": 72,
+    "status": "active"
+  },
+  {
+    "model_name": "Tamil Nadu Random Forest Predictor (CPCB NAQI)",
+    "model_type": "random_forest",
+    "version": "tn_rf_v1",
+    "accuracy": 0.9918326786406819,
+    "rmse": 3.6011588549202656,
+    "model_file": "rf_tn_aqi.pkl",
+    "scaler_file": "scaler_tn.pkl",
+    "features": [
+      "pm2_5",
+      "pm10",
+      "co",
+      "no2",
+      "so2",
+      "o3",
+      "temp_c",
+      "humidity_pct",
+      "pressure_hpa",
+      "wind_speed_kmh",
+      "wind_dir_deg",
+      "rain_mm",
+      "solar_rad_wm2",
+      "hour",
+      "month"
+    ],
+    "feature_importance": [
+      {
+        "feature": "o3",
+        "importance": 0.9514562706214497
+      },
+      {
+        "feature": "pm10",
+        "importance": 0.022553029720379824
+      },
+      {
+        "feature": "pm2_5",
+        "importance": 0.02091603575837691
+      },
+      {
+        "feature": "so2",
+        "importance": 0.0020944424811526357
+      },
+      {
+        "feature": "humidity_pct",
+        "importance": 0.0008754431829479351
+      },
+      {
+        "feature": "no2",
+        "importance": 0.0005306318153923786
+      },
+      {
+        "feature": "solar_rad_wm2",
+        "importance": 0.0003724515806116783
+      },
+      {
+        "feature": "wind_dir_deg",
+        "importance": 0.0002543321046497509
+      },
+      {
+        "feature": "pressure_hpa",
+        "importance": 0.00025051540635006344
+      },
+      {
+        "feature": "wind_speed_kmh",
+        "importance": 0.0002427479533129089
+      },
+      {
+        "feature": "co",
+        "importance": 0.00018639084704903918
+      },
+      {
+        "feature": "hour",
+        "importance": 0.00015037910480781162
+      },
+      {
+        "feature": "temp_c",
+        "importance": 0.00010374838821033796
+      },
+      {
+        "feature": "rain_mm",
+        "importance": 1.3581035309148421e-05
+      },
+      {
+        "feature": "month",
+        "importance": 0.0
+      }
+    ],
+    "forecast_hours": 72,
+    "status": "active"
+  }
+]
